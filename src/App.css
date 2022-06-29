@@ -1,29 +1,28 @@
 .App {
   text-align: center;
-  display: flex;
-  flex-flow: row;
-  min-width: 600px;
+  
 }
 
-.Column1 {
-    width: 200px;
-    height: 100vh;
-    border: 1px solid black;
-}
-.Column2 {
-    height: 100vh;
-    border: 1px solid blue;
-    flex-grow: 2;
-}
-.Column3{
-    width: 300px;
-    height: 100vh;
-    border: 1px solid black;
+.btn {
+    padding: 0.5rem;
+    color: white;
+    border: black;
+    border-radius: 3px;
+    margin: 0.5rem;
 }
 
-@media (max-width: 600px) {
-    .App {
-        
-        overflow: visible;
-    }
+.btn:hover {
+    filter: brightness(1.25);
+    cursor: pointer;
 }
+
+.btn-green {
+    background-color: green;
+}
+.btn-gold {
+    background-color: goldenrod;
+}
+.btn-purple {
+    background-color: purple;
+}
+
