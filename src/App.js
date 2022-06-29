@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import QuestionOne from './QuestionOne/QuestionOne';
+import QuestionTwo from './QuestionTwo/QuestionTwo'
 
 function App() {
     const [ currentQuestion, setCurrentQuestion ] = useState("Question1")
@@ -28,6 +29,7 @@ function App() {
                 </button>
             </header>
             {currentQuestion === "Question1" ? <QuestionOne /> : <></>}
+            {currentQuestion === "Question2" ? <QuestionTwo /> : <></>}
         </div>
     );
 }
