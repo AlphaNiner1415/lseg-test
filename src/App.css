@@ -2,7 +2,7 @@
   text-align: center;
   display: flex;
   flex-flow: row;
-  
+  min-width: 600px;
 }
 
 .Column1 {
@@ -23,7 +23,7 @@
 
 @media (max-width: 600px) {
     .App {
-        width: 600px;
+        
         overflow: visible;
     }
 }
