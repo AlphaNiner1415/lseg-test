@@ -1,11 +1,6 @@
 import fetch from 'node-fetch';
 async function thisIsSyncFunction() {
-    //Code change, add await here so that function actually waits for fetch to be complete first before
-    //Reassigning a new value to the result
-    //Console.log happens BEFORE the promise is ran, so moving the value assignment OUTSIDE allows the reassignment to
-    //happen BEFORE console.log is ran, since var assignment is not asynchronous, so the code is run top to bottom
-    //The reassignment comes first so it is run first, that it triggers a promise is irrelevant, console.log will now wait
-    //for that promise to complete
+    
     let result = await fetch("https://codequiz.azurewebsites.net/", {
         method: "GET",
         headers: {
