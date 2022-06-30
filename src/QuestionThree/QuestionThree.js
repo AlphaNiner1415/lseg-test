@@ -1,3 +1,4 @@
+//change to const fetch = require('node-fetch') if not in commonJS environment
 import fetch from 'node-fetch';
 async function thisIsSyncFunction() {
     
